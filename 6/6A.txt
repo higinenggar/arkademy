@@ -1,0 +1,2 @@
+SELECT cashier.name AS Cashier, product.name AS Product, category.name AS Category, product.price  AS Price FROM cashier
+LEFT JOIN product ON cashier.id = product.id_cashier LEFT JOIN category ON category.id = product.id_category ORDER BY cashier.id ASC;
